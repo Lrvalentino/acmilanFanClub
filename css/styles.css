@@ -19,7 +19,7 @@ header {
 }
 
 .header__titulo {
-    background-color: black;
+    background-color: rgb(49, 41, 165);
     color: rgb(110, 17, 17);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
