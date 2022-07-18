@@ -280,7 +280,7 @@ margin: 20px;
         width: 100%;
         transform: scale(1.2);
     }
-    .champions :hover {
+    .champions:hover {
         grid-area: champions;
         height: 80%;
         width: 100%;
