@@ -38,7 +38,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    background-color: rgb(110, 17, 17)
+    background-image: linear-gradient(rgb(70, 13, 13), rgb(104, 61, 61));
 }
 
 .header__elemento {
@@ -52,7 +52,7 @@ header {
 
 .main__section{
     display: grid;
-    width: 90%;
+    width: 93%;
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: auto; 
     grid-template-areas: 'escudo intro himno';
@@ -91,9 +91,12 @@ header {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
 .article__intro {
     text-align: center;
-    margin: 13px
+    background-image: linear-gradient(rgb(70, 13, 13), rgb(104, 61, 61));
+    margin: 13px;
+    color: black;
 }
 
 .main__img {
@@ -128,7 +131,7 @@ margin: 20px;
     height: 100%;
     width: 100%;
     margin: 20px;
-    background-color: red;
+    background-image: linear-gradient(rgb(70, 13, 13), rgb(104, 61, 61));
     color: black;
     font-family: cursive;
 }
@@ -241,10 +244,71 @@ margin: 20px;
         height: 80%;
         width: 100%;
     }
-    .weah {
+    .maldini:hover {
+        grid-area: maldini;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .baresi:hover {
+        grid-area: baresi;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .ibra:hover {
+        grid-area: ibra;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .inzaghi:hover {
+        grid-area: inzaghi;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .gattuso:hover {
+        grid-area: gattuso;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .holandeses:hover {
+        grid-area: holandeses;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .champions :hover {
+        grid-area: champions;
+        height: 80%;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .rivales:hover {
+        grid-area: rivales;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .sheva:hover {
+        grid-area: sheva;
+        height: 80%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .kaka:hover {
+        grid-area: kaka;
+        height: 80%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .weah:hover {
         grid-area: weah;
         height: 80%;
         width: 100%;
+        transform: scale(1.5);
     }
     .gal__1 {
         grid-area: baresi;
