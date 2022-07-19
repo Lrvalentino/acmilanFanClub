@@ -23,28 +23,33 @@
                 <li class="header__elemento"><a href="historia.html">Historia</a></li>
                 <li class="header__elemento"><a href="galeria.html">Galeria</a></li> 
                 <li class="header__elemento"><a href="plantilla.html">Plantilla</a></li>
-                <li class="header__elemento"><a href="contacto.html">Contacto</a></li>
+                <li class="header__elemento"><a href="comentarios.html">Comentarios</a></li>
             </ul>
         </nav>    
     </header>
     <main><!-- CONTENIDO -->
-        <h1 class="contacto__titulo">CONTACTO</h1>
-        <form action="post">
-            <div>
-                <label>Nombre</label>
-                <Input type="text">
-            </div>
-            <div>
-                <label>Mail</label>
-                <Input type="text">
-            </div>
-            <div>
-                <label>Telefono</label>
-                <Input type="number">
-            </div>
-            <Input type="submit" value="Enviar Datos">
-            <Input type="reset" value="Borrar Datos">
-        </form>
+        <h1 class="comentarios__titulo">COMENTARIOS</h1>
+        <section>
+            <article>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3>            </h3>
+            </article>
+            <article>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Deje su comentario aquí" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">COMENTE</label>
+                </div>
+            </article>
+        </section>
     </main>
     <footer><!-- PIE DE PAGINA -->
         <img class="footer__img" src="../resources/instagram.png" alt="instagram">
