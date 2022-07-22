@@ -1,0 +1,859 @@
+@import "footer";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: gray;
+}
+/* HEADER */
+header {
+    background-color: gray;
+}
+
+.header__titulo {
+    background-color: rgb(0, 0, 0);
+    color: rgb(110, 17, 17);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__lista {
+    display: flex; 
+    list-style: none;
+    padding: 0 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgb(70, 13, 13), rgb(104, 61, 61));
+}
+
+.header__elemento {
+    display: inline;
+    font-family: serif;
+    font-size: 20px;
+    color: rgb(8, 0, 0);
+}
+
+/* MAIN INDEX */
+
+.main__section{
+    display: grid;
+    width: 93%;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+    grid-template-areas: 'escudo intro himno';
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 20px;
+}
+
+.escudo img{
+    grid-area: escudo;
+    width: 100%;
+    height: 100%;
+}
+
+.escudo {
+    grid-area: escudo;
+    width: 100%;
+    height: 100%;
+}
+
+
+.intro{
+    grid-area: intro;
+    width: 100%;
+    height: 100%;
+}
+
+.himno {
+    grid-area: himno;
+    width: 100%;
+    height: 100%;
+}
+
+.main__titulo {
+    color: rgb(110, 17, 17);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.article__intro {
+    text-align: center;
+    background-image: linear-gradient(rgb(70, 13, 13), rgb(104, 61, 61));
+    margin: 13px;
+    color: black;
+}
+
+.main__img {
+    margin: 13px;
+}
+
+.main__iframe {
+    margin: 13px;
+}
+
+/* MAIN HISTORIA */
+
+.section__historia {  
+display: grid;
+width: 90%;
+grid-template-columns: 1fr 1fr; 
+grid-template-rows: auto; 
+grid-template-areas: 'texto escudos'
+                    'texto poleras';
+column-gap: 20px;
+row-gap: 20px;
+margin: 20px;
+}
+
+.historia__titulo {
+    color: rgb(110, 17, 17);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.historia__texto{
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+    background-image: linear-gradient(rgb(70, 13, 13), rgb(104, 61, 61));
+    color: black;
+    font-family: cursive;
+}
+
+.escudos {
+    grid-area: escudos;
+    height: 100%;
+    width: 100%;
+}
+
+.poleras {
+    grid-area: poleras;
+    height: 100%;
+    width: 100%;
+}
+
+.texto {
+    grid-area: texto;
+    height: 100%;
+    width: 100%;
+}
+
+.img__1{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+.img__2{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+/* MAIN PLANTILLA */
+
+.plantilla__titulo {
+    color: rgb(110, 17, 17);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* MAIN GALERIA */
+
+.galeria__titulo {
+    color: rgb(110, 17, 17);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.galeria__section {  
+    display: grid;
+    width: 92%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 'maldini rivales rivales baresi'
+                        'sheva champions champions weah'
+                        'gattuso champions champions inzaghi'
+                        'ibra holandeses holandeses kaka';
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 20px;
+    }
+    .maldini {
+        grid-area: maldini;
+        height: 100%;
+        width: 100%;
+    }
+    .baresi {
+        grid-area: baresi;
+        height: 100%;
+        width: 100%;
+    }
+    .ibra {
+        grid-area: ibra;
+        height: 100%;
+        width: 100%;
+    }
+    .inzaghi {
+        grid-area: inzaghi;
+        height: 100%;
+        width: 100%;
+    }
+    .gattuso {
+        grid-area: gattuso;
+        height: 100%;
+        width: 100%;
+    }
+    .holandeses {
+        grid-area: holandeses;
+        height: 100%;
+        width: 100%;
+    }
+    .champions {
+        grid-area: champions;
+        height: 80%;
+        width: 100%;
+    }
+    .rivales {
+        grid-area: rivales;
+        height: 100%;
+        width: 100%;
+    }
+    .sheva {
+        grid-area: sheva;
+        height: 80%;
+        width: 100%;
+    }
+    .kaka {
+        grid-area: kaka;
+        height: 80%;
+        width: 100%;
+    }
+    .maldini:hover {
+        grid-area: maldini;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .baresi:hover {
+        grid-area: baresi;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .ibra:hover {
+        grid-area: ibra;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .inzaghi:hover {
+        grid-area: inzaghi;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .gattuso:hover {
+        grid-area: gattuso;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .holandeses:hover {
+        grid-area: holandeses;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .champions:hover {
+        grid-area: champions;
+        height: 80%;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .rivales:hover {
+        grid-area: rivales;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.2);
+    }
+    .sheva:hover {
+        grid-area: sheva;
+        height: 80%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .kaka:hover {
+        grid-area: kaka;
+        height: 80%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .weah:hover {
+        grid-area: weah;
+        height: 80%;
+        width: 100%;
+        transform: scale(1.5);
+    }
+    .gal__1 {
+        grid-area: baresi;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__2 {
+        grid-area: ibra;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__3 {
+        grid-area: holandeses;
+        height: 100%;
+        width: 100%;
+    }
+    .gal__4 {
+        grid-area: champions;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__5 {
+        grid-area: inzaghi;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__6 {
+        grid-area: gattuso;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__7 {
+        grid-area: maldini;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__8 {
+        grid-area: rivales;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__9 {
+        grid-area: weah;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__10 {
+        grid-area: sheva;
+        height: 80%;
+        width: 100%;
+    }
+    .gal_11 {
+        grid-area: kaka;
+        height: 80%;
+        width: 100%;
+    }
+
+/* MAIN COMENTARIOS */
+
+.comentarios__titulo {
+    color: rgb(110, 17, 17);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    color: white;
+}
+
+.footer__img{
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+
+.footer__derechos{
+color: rgb(134, 20, 20);
+}
+
+/* Media Querie Tablet */
+@media (min-width: 576px) and (max-width: 992px){
+    .main__section{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 'escudo escudo'
+                            'intro himno';
+        column-gap: 20px;
+        row-gap: 20px;
+        margin: 20px;
+    }
+    .escudo {
+        grid-area: escudo;
+        width: 100%;
+        height: 100%;
+    }
+    .intro{
+        grid-area: intro;
+        width: 100%;
+        height: 100%;
+    }
+    .himno {
+        grid-area: himno;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main__titulo {
+        color: rgb(110, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .article__intro {
+        text-align: center;
+        margin: 13px
+    }
+    .main__img {
+        margin: 13px;
+    }
+    .main__iframe {
+        margin: 13px;
+    }
+    /* Historia querie Tablet */
+
+    .section__historia {  
+        display: grid;
+        width: 96%;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto; 
+        grid-template-areas: 'texto texto'
+                            'escudos poleras';
+        column-gap: 20px;
+        row-gap: 20px;
+        margin: 20px;
+        }
+    .historia__titulo {
+        color: rgb(110, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    } 
+    .historia__texto{
+        height: 100%;
+        width: 100%;
+        margin: 20px;
+        background-color: red;
+        color: black;
+        font-family: cursive;
+    }
+    .img__1{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+        
+    .escudos {
+        grid-area: escudos;
+    }
+    
+    .poleras {
+        grid-area: poleras;
+    }
+    
+    .texto {
+        grid-area: texto;
+    }
+    .img__2{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+    /* Media Querie Tablet */
+    .galeria__titulo {
+        color: rgb(110, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .galeria__section {  
+        display: grid;
+        width: 92%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto; 
+        grid-template-areas: 'maldini baresi'
+                            'champions champions'
+                            'gattuso inzaghi'
+                            'rivales rivales'
+                            'ibra kaka'
+                            'holandeses holandeses'
+                            'sheva weah';
+        column-gap: 20px;
+        row-gap: 20px;
+        margin: 20px;
+        }
+        .maldini {
+            grid-area: maldini;
+            height: 100%;
+            width: 100%;
+        }
+        .baresi {
+            grid-area: baresi;
+            height: 100%;
+            width: 100%;
+        }
+        .ibra {
+            grid-area: ibra;
+            height: 100%;
+            width: 100%;
+        }
+        .inzaghi {
+            grid-area: inzaghi;
+            height: 100%;
+            width: 100%;
+        }
+        .gattuso {
+            grid-area: gattuso;
+            height: 100%;
+            width: 100%;
+        }
+        .holandeses {
+            grid-area: holandeses;
+            height: 100%;
+            width: 100%;
+        }
+        .champions {
+            grid-area: champions;
+            height: 80%;
+            width: 100%;
+        }
+        .rivales {
+            grid-area: rivales;
+            height: 100%;
+            width: 100%;
+        }
+        .sheva {
+            grid-area: sheva;
+            height: 80%;
+            width: 100%;
+        }
+        .kaka {
+            grid-area: kaka;
+            height: 80%;
+            width: 100%;
+        }
+        .weah {
+            grid-area: weah;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__1 {
+            grid-area: baresi;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__2 {
+            grid-area: ibra;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__3 {
+            grid-area: holandeses;
+            height: 100%;
+            width: 100%;
+        }
+        .gal__4 {
+            grid-area: champions;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__5 {
+            grid-area: inzaghi;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__6 {
+            grid-area: gattuso;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__7 {
+            grid-area: maldini;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__8 {
+            grid-area: rivales;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__9 {
+            grid-area: weah;
+            height: 80%;
+            width: 100%;
+        }
+        .gal__10 {
+            grid-area: sheva;
+            height: 80%;
+            width: 100%;
+        }
+        .gal_11 {
+            grid-area: kaka;
+            height: 80%;
+            width: 100%;
+        }
+    
+}
+
+/* Media Querie celular */
+
+@media (min-width: 320px) and (max-width: 575px) {
+    /* Index Celular */
+    .main__section{
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+        row-gap: 20px;
+        margin: 20px;
+        grid-template-areas: 'escudo'
+                            'intro'
+                            'himno'
+    }
+    .escudo {
+        grid-area: escudo;
+        width: 100%;
+        height: 100%;
+    }
+    .intro{
+        grid-area: intro;
+        width: 100%;
+        height: 100%;
+    }
+    .himno {
+        grid-area: himno;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main__titulo {
+        color: rgb(110, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .article__intro {
+        text-align: center;
+        margin: 13px
+    }
+    .main__img {
+        margin: 13px;
+    }
+    .main__iframe {
+        margin: 13px;
+    }
+    /* Historia celular */
+    .section__historia {  
+        display: grid;
+        width: 96%;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        grid-template-areas: 'escudos'
+                            'texto'
+                            'poleras';
+        column-gap: 20px;
+        row-gap: 20px;
+        margin: 20px;
+        }
+    .historia__titulo {
+        color: rgb(110, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    } 
+    .historia__texto{
+        height: 100%;
+        width: 100%;
+        margin: 20px;
+        background-color: red;
+        color: black;
+        font-family: cursive;
+    }
+    .img__1{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+        
+    .escudos {
+        grid-area: escudos;
+    }
+    
+    .poleras {
+        grid-area: poleras;
+    }
+    
+    .texto {
+        grid-area: texto;
+    }
+    .img__2{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+    /* Galeria Celular */
+    .galeria__titulo {
+        color: rgb(110, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .galeria__section {  
+        display: grid;
+        width: 92%;
+        height: 100%;
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(11)1fr; 
+        grid-template-areas:'maldini'
+                            'baresi'
+                            'champions'
+                            'gattuso'
+                            'inzaghi'
+                            'rivales'
+                            'ibra'
+                            'kaka'
+                            'holandeses'
+                            'sheva'
+                            'weah';
+        row-gap: 20px;
+        margin: 20px;
+        }
+    .maldini {
+        grid-area: maldini;
+        height: 100%;
+        width: 100%;
+    }
+    .baresi {
+        grid-area: baresi;
+        height: 100%;
+        width: 100%;
+    }
+    .ibra {
+        grid-area: ibra;
+        height: 100%;
+        width: 100%;
+    }
+    .inzaghi {
+        grid-area: inzaghi;
+        height: 100%;
+        width: 100%;
+    }
+    .gattuso {
+        grid-area: gattuso;
+        height: 100%;
+        width: 100%;
+    }
+    .holandeses {
+        grid-area: holandeses;
+        height: 100%;
+        width: 100%;
+    }
+    .champions {
+        grid-area: champions;
+        height: 80%;
+        width: 100%;
+    }
+    .rivales {
+        grid-area: rivales;
+        height: 100%;
+        width: 100%;
+    }
+    .sheva {
+        grid-area: sheva;
+        height: 80%;
+        width: 100%;
+    }
+    .kaka {
+        grid-area: kaka;
+        height: 80%;
+        width: 100%;
+    }
+    .weah {
+        grid-area: weah;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__1 {
+        grid-area: baresi;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__2 {
+        grid-area: ibra;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__3 {
+        grid-area: holandeses;
+        height: 100%;
+        width: 100%;
+    }
+    .gal__4 {
+        grid-area: champions;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__5 {
+        grid-area: inzaghi;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__6 {
+        grid-area: gattuso;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__7 {
+        grid-area: maldini;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__8 {
+        grid-area: rivales;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__9 {
+        grid-area: weah;
+        height: 80%;
+        width: 100%;
+    }
+    .gal__10 {
+        grid-area: sheva;
+        height: 80%;
+        width: 100%;
+    }
+    .gal_11 {
+        grid-area: kaka;
+        height: 80%;
+        width: 100%;
+    }
+}
