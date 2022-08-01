@@ -249,149 +249,103 @@ margin: 20px;
         width: 100%;
     }
     .maldini:hover {
+        transition: 1s;
         grid-area: maldini;
         height: 100%;
         width: 100%;
         transform: scale(1.5);
     }
     .baresi:hover {
+        transition: 1s;
         grid-area: baresi;
         height: 100%;
         width: 100%;
         transform: scale(1.5);
     }
     .ibra:hover {
+        transition: 1s;
         grid-area: ibra;
         height: 100%;
         width: 100%;
         transform: scale(1.5);
     }
     .inzaghi:hover {
+        transition: 1s;
         grid-area: inzaghi;
         height: 100%;
         width: 100%;
         transform: scale(1.5);
     }
     .gattuso:hover {
+        transition: 1s;
         grid-area: gattuso;
         height: 100%;
         width: 100%;
         transform: scale(1.5);
     }
     .holandeses:hover {
+        transition: 1s;
         grid-area: holandeses;
         height: 100%;
         width: 100%;
         transform: scale(1.2);
     }
     .champions:hover {
+        transition: 1s;
         grid-area: champions;
         height: 80%;
         width: 100%;
         transform: scale(1.2);
     }
     .rivales:hover {
+        transition: 1s;
         grid-area: rivales;
         height: 100%;
         width: 100%;
         transform: scale(1.2);
     }
     .sheva:hover {
+        transition: 1s;
         grid-area: sheva;
         height: 80%;
         width: 100%;
         transform: scale(1.5);
     }
     .kaka:hover {
+        transition: 1s;
         grid-area: kaka;
         height: 80%;
         width: 100%;
         transform: scale(1.5);
     }
     .weah:hover {
+        transition: 1s;
         grid-area: weah;
         height: 80%;
         width: 100%;
         transform: scale(1.5);
     }
-    .gal__1 {
-        grid-area: baresi;
-        height: 80%;
-        width: 100%;
-    }
-    .gal__2 {
-        grid-area: ibra;
-        height: 80%;
-        width: 100%;
-    }
-    .gal__3 {
-        grid-area: holandeses;
-        height: 100%;
-        width: 100%;
-    }
-    .gal__4 {
-        grid-area: champions;
-        height: 80%;
-        width: 100%;
-    }
-    .gal__5 {
-        grid-area: inzaghi;
-        height: 80%;
-        width: 100%;
-    }
-    .gal__6 {
-        grid-area: gattuso;
-        height: 80%;
-        width: 100%;
-    }
-    .gal__7 {
-        grid-area: maldini;
-        height: 80%;
-        width: 100%;
-    }
-    .gal__8 {
-        grid-area: rivales;
-        height: 80%;
-        width: 100%;
-    }
-    .gal__9 {
-        grid-area: weah;
-        height: 80%;
-        width: 100%;
-    }
-    .gal__10 {
-        grid-area: sheva;
-        height: 80%;
-        width: 100%;
-    }
-    .gal_11 {
-        grid-area: kaka;
-        height: 80%;
-        width: 100%;
-    }
 
-/* MAIN COMENTARIOS */
+    /* MAIN COMENTARIOS */
 
-.comentarios__titulo {
-    color: rgb(110, 17, 17);
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
-.pelota {
-    float: left;
-}
-
-.comentarios__comentarios{
-    display: grid;
-    width: 60%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'comentario1
-                        comentario2';
-    row-gap: 20px;
-    margin: 20px;
-}
+    .comentarios__titulo {
+        color: rgb(110, 17, 17);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .pelota {
+        float: left;
+    }
+    .comentarios__comentarios{
+        display: grid;
+        width: 60%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 20px;
+        margin: 20px;
+        grid-template-areas: 'comentario1
+                            comentario2';
+    }
 
 .comentarios__comentario1{
     grid-area: comentario1;
@@ -408,27 +362,6 @@ margin: 20px;
     font-family: cursive;
 }
 
-
-/* FOOTER */
-
-footer {
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20px;
-    color: white;
-}
-
-.footer__img{
-    width: 20px;
-    height: 20px;
-    float: left;
-}
-
-.footer__derechos{
-color: rgb(134, 20, 20);
-}
 
 /* Media Querie Tablet */
 @media (min-width: 576px) and (max-width: 992px){
