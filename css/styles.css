@@ -345,9 +345,15 @@ header {
 .pelota {
   float: left; }
 
+.apellidos {
+  width: 100%; }
+
+.comentario {
+  width: 100%; }
+
 .comentarios__comentarios {
   display: grid;
-  width: 60%;
+  width: 80%;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'comentario1 comentario2';
