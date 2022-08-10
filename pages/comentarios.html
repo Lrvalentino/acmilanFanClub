@@ -21,15 +21,37 @@
 <body>
     <header><!-- ENCABEZADO -->
         <h1 class="header__titulo"> A.C. Milan Fan Club </h1>
-        <nav class="header__nav"> <!-- NAVEGACIÓN/MENU -->
-            <ul class="header__lista">
-                <li class="header__elemento"><a href="../index.html">Inicio</a></li>
-                <li class="header__elemento"><a href="historia.html">Historia</a></li>
-                <li class="header__elemento"><a href="galeria.html">Galeria</a></li> 
-                <li class="header__elemento"><a href="plantilla.html">Plantilla</a></li>
-                <li class="header__elemento"><a href="comentarios.html">Comentarios</a></li>
-            </ul>
-        </nav>    
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">A.C. Milan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia</a>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                    <a class="nav-link" href="plantilla.html">Plantilla</a>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                    <a class="nav-link" href="comentarios.html">Comentarios</a>
+                    <li class="nav-item">
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+                </div>
+            </div>
+        </nav>  
     </header>
     <main><!-- CONTENIDO -->
         <h1 class="comentarios__titulo">COMENTARIOS</h1>
