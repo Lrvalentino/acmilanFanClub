@@ -293,21 +293,36 @@ margin: 20px;
 .comentarios__titulo {
     @include titulo;
 }
-.pelota {
-    float: left;
+
+.comentario__botones{
+    display: flex;
+
+}
+
+.comentario__boton1{
+    margin-left: 50px;
+}
+
+.comentario__boton2{
+    margin-left: 20px;
+}
+
+.pelota{
+    margin: 20px;
 }
 
 .apellidos{
-    width: 100%;
+    width: 95%;
+    margin: 30px;
 }
 
 .comentario{
-    width: 100%;
+    width: 95%;
+    margin:30px;
 }
 
 .comentarios__comentarios{
     display: grid;
-    width: 80%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     row-gap: 20px;
