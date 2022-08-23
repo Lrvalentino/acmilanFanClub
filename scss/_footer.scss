@@ -1,6 +1,6 @@
 /* FOOTER */
 
-footer{
+.footer{
     display: flex;
     background-color: black;
     position: absolute;
@@ -9,14 +9,15 @@ footer{
     height: 30px;
     color: white;
     justify-content: center;
-}
 
-.footer__img{
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-}
-
-.footer__derechos{
-color: rgb(134, 20, 20);
+    &__img{
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+    }
+    
+    &__derechos{
+    color: rgb(134, 20, 20);
+    font-size: 1rem;
+    }
 }

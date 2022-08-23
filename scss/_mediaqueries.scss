@@ -12,15 +12,15 @@
     }
     .escudo {
         grid-area: escudo;
-        width: 100%;
+        width: 97%;
     }
     .intro{
         grid-area: intro;
-        width: 100%;
+        width: 95%;
     }
     .himno {
         grid-area: himno;
-        width:100%;
+        width:95%;
     }
     
     .main__titulo {
@@ -30,7 +30,7 @@
     }
     .article__intro {
         text-align: center;
-        margin: 13px
+        margin: 13px;
     }
     .main__img {
         margin: 13px;
@@ -83,7 +83,7 @@
         width: 95%;
         padding: 20px;
     }
-    /* Media Querie Tablet */
+    /* Galeria Media Querie Tablet */
     .galeria__titulo {
         color: rgb(110, 17, 17);
         text-align: center;
@@ -163,6 +163,20 @@
         }
 }
 
+/* comentarios tablet */
+
+.apellidos{
+    width: 90%;
+    margin: 30px;
+}
+
+.comentario{
+    width: 90%;
+    margin:30px;
+}
+
+
+
 /* Media Querie celular */
 
 @media (min-width: 320px) and (max-width: 575px) {
@@ -179,17 +193,17 @@
     }
     .escudo {
         grid-area: escudo;
-        width: 100%;
+        width: 95%;
         height: 100%;
     }
     .intro{
         grid-area: intro;
-        width: 100%;
+        width: 95%;
         height: 100%;
     }
     .himno {
         grid-area: himno;
-        width: 100%;
+        width: 95%;
         height: 100%;
     }
     
@@ -230,6 +244,7 @@
         background-color: red;
         color: black;
         font-family: cursive;
+        font-size: 1rem;
     }
     .img__1{
         width: 100%;
@@ -332,4 +347,16 @@
         height: 80%;
         width: 100%;
     }
+    /* Comentarios Celular */
+
+    .apellidos{
+        width: 87%;
+        margin: 30px;
+    }
+    
+    .comentario{
+        width: 87%;
+        margin:30px;
+    }
+    
 }

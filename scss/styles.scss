@@ -1,7 +1,6 @@
 @import "footer";
 @import "nav";
 @import "operators";
-@import "variables";
 
 
 *{
@@ -65,6 +64,7 @@ body {
 
 .article__intro {
     text-align: center;
+    font-size: 1.38rem;
     background-image: linear-gradient(rgb(70, 13, 13), rgb(104, 61, 61));
     margin: 13px;
     color: black;
@@ -102,6 +102,7 @@ margin: 20px;
     padding: 20px;
     background-image: linear-gradient(rgb(70, 13, 13), rgb(104, 61, 61));
     color: black;
+    font-size: 1.38rem;
     font-family: cursive;
 }
 

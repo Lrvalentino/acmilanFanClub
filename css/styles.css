@@ -1,6 +1,5 @@
-@charset "UTF-8";
 /* FOOTER */
-footer {
+.footer {
   display: flex;
   background-color: black;
   position: absolute;
@@ -9,49 +8,23 @@ footer {
   height: 30px;
   color: white;
   justify-content: center; }
+  .footer__img {
+    width: 20px;
+    height: 20px;
+    margin: 10px; }
+  .footer__derechos {
+    color: #861414;
+    font-size: 1rem; }
 
-.footer__img {
-  width: 20px;
-  height: 20px;
-  margin: 10px; }
-
-.footer__derechos {
-  color: #861414; }
-
-header {
+.header {
   background-color: gray; }
-
-.header__titulo {
-  background-color: black;
-  color: #6e1111;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif; }
-
-.header__lista {
-  display: flex;
-  list-style: none;
-  padding: 0 16px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  flex-grow: 1; }
-
-.header__nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  background-image: linear-gradient(#460d0d, #683d3d); }
-
-.header__elemento {
-  display: inline;
-  font-family: serif;
-  font-size: 20px;
-  color: #080000; }
+  .header__titulo {
+    background-color: black;
+    color: #6e1111;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; }
 
 /* operadores */
-/* Variables */
-/* TAMAÑOS */
-/* TAMAÑO LETRA */
 * {
   margin: 0px;
   padding: 0px; }
@@ -69,7 +42,8 @@ body {
 .main__titulo {
   color: #6e1111;
   text-align: center;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem; }
 
 .main__section {
   display: grid;
@@ -103,6 +77,7 @@ body {
 
 .article__intro {
   text-align: center;
+  font-size: 1.38rem;
   background-image: linear-gradient(#460d0d, #683d3d);
   margin: 13px;
   color: black; }
@@ -117,7 +92,8 @@ body {
 .historia__titulo {
   color: #6e1111;
   text-align: center;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem; }
 
 .section__historia {
   display: grid;
@@ -135,6 +111,7 @@ body {
   padding: 20px;
   background-image: linear-gradient(#460d0d, #683d3d);
   color: black;
+  font-size: 1.38rem;
   font-family: cursive; }
 
 .escudos {
@@ -166,13 +143,15 @@ body {
 .plantilla__titulo {
   color: #6e1111;
   text-align: center;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem; }
 
 /* MAIN GALERIA */
 .galeria__titulo {
   color: #6e1111;
   text-align: center;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem; }
 
 .galeria__section {
   display: grid;
@@ -316,7 +295,8 @@ body {
 .comentarios__titulo {
   color: #6e1111;
   text-align: center;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem; }
 
 .comentario__botones {
   display: flex; }
@@ -370,13 +350,13 @@ body {
     margin: 20px; }
   .escudo {
     grid-area: escudo;
-    width: 100%; }
+    width: 97%; }
   .intro {
     grid-area: intro;
-    width: 100%; }
+    width: 95%; }
   .himno {
     grid-area: himno;
-    width: 100%; }
+    width: 95%; }
   .main__titulo {
     color: #6e1111;
     text-align: center;
@@ -420,7 +400,7 @@ body {
   .img__2 {
     width: 95%;
     padding: 20px; }
-  /* Media Querie Tablet */
+  /* Galeria Media Querie Tablet */
   .galeria__titulo {
     color: #6e1111;
     text-align: center;
@@ -480,6 +460,15 @@ body {
     height: 80%;
     width: 100%; } }
 
+/* comentarios tablet */
+.apellidos {
+  width: 90%;
+  margin: 30px; }
+
+.comentario {
+  width: 90%;
+  margin: 30px; }
+
 /* Media Querie celular */
 @media (min-width: 320px) and (max-width: 575px) {
   /* Index Celular */
@@ -492,15 +481,15 @@ body {
     grid-template-areas: 'escudo' 'intro' 'himno'; }
   .escudo {
     grid-area: escudo;
-    width: 100%;
+    width: 95%;
     height: 100%; }
   .intro {
     grid-area: intro;
-    width: 100%;
+    width: 95%;
     height: 100%; }
   .himno {
     grid-area: himno;
-    width: 100%;
+    width: 95%;
     height: 100%; }
   .main__titulo {
     color: #6e1111;
@@ -530,7 +519,8 @@ body {
     padding: 20px;
     background-color: red;
     color: black;
-    font-family: cursive; }
+    font-family: cursive;
+    font-size: 1rem; }
   .img__1 {
     width: 100%;
     padding: 20px; }
@@ -600,4 +590,11 @@ body {
   .weah {
     grid-area: weah;
     height: 80%;
-    width: 100%; } }
+    width: 100%; }
+  /* Comentarios Celular */
+  .apellidos {
+    width: 87%;
+    margin: 30px; }
+  .comentario {
+    width: 87%;
+    margin: 30px; } }
