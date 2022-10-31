@@ -338,6 +338,14 @@ body {
   color: black;
   font-family: cursive; }
 
+/* Java CSS */
+.mainjs {
+  display: flex; }
+
+.logo__porte {
+  height: 150px;
+  width: 150px; }
+
 /* Media Querie Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
   .main__section {
