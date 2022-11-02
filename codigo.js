@@ -1,56 +1,4 @@
-let titulojs = document.getElementById("titulojs");
-
-let logos = document.getElementsByClassName("logo__porte");
-
-let mainjs=document.getElementById("mainjs");
-
-let montoApuesta=document.getElementById("montoApuesta");
-
-let acMilan = document.getElementById("acMilan");
-
-let pSG = document.getElementById("pSG");
-
-let inter = document.getElementById("inter");
-
-let realMadrid = document.getElementById("realMadrid");
-
-let barcelona = document.getElementById("barcelona");
-
-let bayerMunich = document.getElementById("bayerMunich");
-
-let manCity = document.getElementById("manCity");
-
-let chelsea = document.getElementById("chelsea");
-
-mainjs.style.background="red";
-
-titulojs.innerText="Apuesta Champion League";
-
-limpiar.onclick = () =>{
-montoApuesta.reset
-}
-/* 
-let edad = prompt("Ingrese su edad");
-if (edad >= 18){
-    console.log("Bienvenido!");
-}
-else {
-    console.log("Pide ayuda a un adulto y continua.")
-}
-let usuario;
-let contrasenia;
-for (let i=1;i<=2;i++){
-    usuario=prompt("Ingresa usuario");
-    contrasenia=prompt("Ingresa contraseña para "+usuario);
-    
-    if((usuario=="Lucas")&&(contrasenia=="Rodriguez")){
-        console.log("Bienvenido al sistema!");
-        break;
-    }else{
-        console.log("Usuario y/o contraseña erroneos! Restan "+(2-i)+" intentos");
-    }
-} */
-const equipos = [
+/* const equipos = [
     {
         id:1,
         nombre:"AC Milan",
@@ -99,7 +47,111 @@ const equipos = [
         liga:"Premier League",
         multiplicador:"6.7"
     },
+]; */
+
+
+const productos = [
+    {
+        id:1,
+        nombre:"Polera Milan",
+        precio:40000,
+        foto: "http://127.0.0.1:5500/resources/polera%20milan.png"
+    },
+    {
+        id:2,
+        nombre:"Short Milan",
+        precio:20000,
+        foto: "http://127.0.0.1:5500/resources/short%20milan.jpg"
+    },
+    {
+        id:3,
+        nombre:"Medias Milan",
+        precio:10000,
+        foto: "http://127.0.0.1:5500/resources/medias%20milan.jpg"
+    },
+    {
+        id:4,
+        nombre:"Gorro Milan",
+        precio:12000,
+        foto: "http://127.0.0.1:5500/resources/gorro%20milan.jpg"
+    },
 ];
+
+
+let titulojs = document.getElementById("titulojs");
+
+let logos = document.getElementsByClassName("logo__porte");
+
+let mainjs=document.getElementById("mainjs");
+
+mainjs.style.background="red";
+
+titulojs.innerText="Tienda";
+
+const carrito = [];
+let contenedor = document.getElementById("misprods");
+
+function creandoProductos(){
+    for(const producto of productos){
+        contenedor.innerHTML += `
+            <div class="card col-sm-2">
+                <img src=${producto.foto} class="card-img-top" alt="producto">
+                <div class="card-body">
+                    <h5 class="card-title">${producto.id}</h5>
+                    <p class="card-text">${producto.nombre}</p>
+                    <p class="card-text">$ ${producto.precio}</p>
+                    <button id='btn${producto.id}' class="btn btn-primary">Comprar</button>
+                </div>
+            </div>   
+        `;
+    }
+    productos.forEach((producto)=>{
+        //evento para cada boton
+        document.getElementById(`btn${producto.id}`).addEventListener("click",function(){
+            agregarAlCarrito(producto);
+        });
+    });
+}
+
+creandoProductos();
+
+function agregarAlCarrito(productoAComprar){
+    carrito.push(productoAComprar);
+    console.table(carrito);
+    alert("Producto "+productoAComprar.nombre+" agregado al carro!");
+    document.getElementById("tablabody").innerHTML += `
+        <tr>
+            <td>${productoAComprar.id}</td>
+            <td>${productoAComprar.nombre}</td>
+            <td>${productoAComprar.precio}</td>
+        </tr>
+    `;
+    let totalCarrito = carrito.reduce((acumulador,prod)=>acumulador+prod.precio,0);
+    document.getElementById("total").innerText = "Total a pagar $: "+totalCarrito;
+}
+
+/* 
+let edad = prompt("Ingrese su edad");
+if (edad >= 18){
+    console.log("Bienvenido!");
+}
+else {
+    console.log("Pide ayuda a un adulto y continua.")
+}
+let usuario;
+let contrasenia;
+for (let i=1;i<=2;i++){
+    usuario=prompt("Ingresa usuario");
+    contrasenia=prompt("Ingresa contraseña para "+usuario);
+    
+    if((usuario=="Lucas")&&(contrasenia=="Rodriguez")){
+        console.log("Bienvenido al sistema!");
+        break;
+    }else{
+        console.log("Usuario y/o contraseña erroneos! Restan "+(2-i)+" intentos");
+    }
+} */
+
 /* let equipoElegido = prompt("Elige tu equipo");
 const equipoSel = equipos.find((equipo) => equipo.nombre == equipoElegido);
 if (equipoSel != undefined){
