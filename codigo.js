@@ -76,3 +76,28 @@ function agregarAlCarrito(productoAComprar){
     let totalCarrito = carrito.reduce((acumulador,prod)=>acumulador+prod.precio,0);
     document.getElementById("total").innerText = "Total a pagar $: "+totalCarrito;
 }
+
+const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
+
+guardarLocal("productosEnVenta", JSON.stringify(productos));
+
+class Producto {
+    constructor(obj) {
+        this.nombre  = obj.producto.toUpperCase();
+        this.precio  = parseFloat(obj.precio);
+    }
+    sumaIva() {
+        this.precio = this.precio * 1.19;
+    }
+}
+
+const almacenados = JSON.parse(localStorage.getItem("productosEnVenta"));
+const productos2 = [];
+
+for (const objeto of almacenados)
+    productos2.push(new Producto(objeto));
+
+for (const producto of productos2)
+    producto.sumaIva();
+
+    console.table(productos2)
