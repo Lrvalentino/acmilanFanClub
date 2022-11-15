@@ -55,17 +55,22 @@
         </nav>  
     </header>
     <main id="mainjs"><!-- CONTENIDO -->
-        <h1 id="titulojs">Javascript</h1>
+        <h1 class="titulojss" id="titulojs">Javascript</h1>
         <div class="mainjs" id="fondo">
             <div class="container">
                 <div id="fila_prueba" style="background-color:#aaa">
+                    <!-- dolar -->
+                    <div class="monedas">
+                        <h4 id="DolarO" class="moneda1"></h4>
+                        <h4 id="UF" class="moneda2"></h4>
+                    </div>
                     <div>
                         <h1 class="text-center">Productos</h1>
                     </div>
                 </div>
                 <div>
                     <div id="prods" class="row">
-                        <!-- Aqui los productos -->
+                        <!-- se agregan los productos por dom -->
                     </div>
                 </div>
                 <div>
@@ -83,6 +88,7 @@
                         </tbody>
                     </table>
                     <h4 id="total">Total a pagar $:</h4>
+                    <button id="comprarYa" class="btn btn-success">Ir a Pagar</button>
                 </div>
             </div>
     </main>
@@ -92,8 +98,10 @@
         <img class="footer__img" src="../resources/whatsapp.png" alt="whatsapp">
         <h7 class="footer__derechos"> *Todos los derechos reservados* </h7>
     </footer>
+    <!-- mi codigo de JS -->
     <script src="../codigo.js"></script>
     <!-- Javascript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <!-- Sweet Alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </html>

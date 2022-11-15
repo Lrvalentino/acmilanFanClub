@@ -346,6 +346,17 @@ body {
   height: 150px;
   width: 150px; }
 
+.titulojss {
+  text-align: center; }
+
+.moneda1 {
+  text-align: center;
+  background-color: green; }
+
+.moneda2 {
+  text-align: center;
+  background-color: aqua; }
+
 /* Media Querie Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
   .main__section {
